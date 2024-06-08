@@ -1,0 +1,24 @@
+h1{ 
+    color: rgb(161, 29, 201);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 2px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+    text-align: center;
+}

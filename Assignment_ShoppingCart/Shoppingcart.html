@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Cart.js" defer></script>
+</head>
+<body style="background-image: url('img.jpg');">
+    <h1>Shopping Cart</h1><br><br>
+    <div style="width: 650px; height: 450px; background-color: rgb(243, 221, 242); margin: auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);">
+        <select name="item" class="input" id="item" style="width: 170px; height: 30px; border-radius: 20px; text-align: center; background-color: rgb(241, 150, 232); margin-left: 130px; margin-top: 30px;">
+            <option value="">Item</option>
+            <option value="Bottle" data-price="100">Bottle - 100</option>
+            <option value="Mobile" data-price="15000">Mobile - 15000</option>
+            <option value="Headphone" data-price="1000">Headphone - 1000</option>
+            <option value="Face wash" data-price="120">Face wash - 120</option>
+            <option value="Vegetable oil" data-price="65">Vegetable oil - 65</option>
+            <option value="Cup noodle" data-price="80">Cup noodle - 80</option>
+        </select>
+        &nbsp;&nbsp;
+
+        Quantity: 
+        <input type="number" id="Qty" value="1" min="1" style="width: 130px; height: 25px; border-radius: 20px; text-align: center; background-color: rgb(241, 150, 232); border-width: 1px;">
+        <br><br>
+        <button type="button" id="add-to-cart" style="width: 100px; height: 30px; border-radius: 13px; background-color: rgb(94, 95, 173); border-width: 1px; margin-left: 285px; box-shadow: 5px 5px 15px rgba(141, 154, 228, 0.3); color: white;">Add to cart</button>
+        <br><br>
+        <div style="width: 450px; height: 240px; background-color: rgb(233, 200, 248); margin: auto; text-align: center;"> 
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="total">
+            Total Cart Value: <span id="total-value">0</span>
+        </div>
+    </div>
+</body>
+</html>
